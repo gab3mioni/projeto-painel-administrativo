@@ -1,6 +1,6 @@
 -- --------------------------------------------------------
 -- Servidor:                     127.0.0.1
--- Versão do servidor:           10.4.28-MariaDB - mariadb.org binary distribution
+-- Versão do servidor:           8.0.31 - MySQL Community Server - GPL
 -- OS do Servidor:               Win64
 -- HeidiSQL Versão:              12.5.0.6677
 -- --------------------------------------------------------
@@ -15,20 +15,19 @@
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 
--- Copiando estrutura do banco de dados para painel_administrativo
-DROP DATABASE IF EXISTS `painel_administrativo`;
-CREATE DATABASE IF NOT EXISTS `painel_administrativo` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci */;
-USE `painel_administrativo`;
+-- Copiando estrutura do banco de dados para painel-administrativo
+DROP DATABASE IF EXISTS `painel-administrativo`;
+CREATE DATABASE IF NOT EXISTS `painel-administrativo` /*!40100 DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci */ /*!80016 DEFAULT ENCRYPTION='N' */;
+USE `painel-administrativo`;
 
--- Copiando estrutura para tabela painel_administrativo.usuarios
+-- Copiando estrutura para tabela painel-administrativo-.usuarios
 DROP TABLE IF EXISTS `usuarios`;
 CREATE TABLE IF NOT EXISTS `usuarios` (
-  `id_user` int(11) DEFAULT NULL,
-  `nome` varchar(50) DEFAULT NULL,
-  `key` varchar(255) DEFAULT NULL,
-  `senha` varchar(16) DEFAULT NULL,
-  `email` varchar(255) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+  `idusuarios` int NOT NULL AUTO_INCREMENT,
+  `usuario` varchar(45) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `senha` varchar(45) COLLATE utf8mb4_unicode_ci NOT NULL,
+  PRIMARY KEY (`idusuarios`)
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- Exportação de dados foi desmarcado.
 

@@ -13,11 +13,30 @@
 
     <main class="p-2">
 
-        <form action="../php/registro.php" method="POST">
-            User: <input type="text" name="usuario"><br><br>
-            Password: <input type="password" name="senha"><br><br>
-            <input type="submit" name="submit" onclick="Enviar()" value="Enviar">
-        </form>
+
+
+        <div class="container text-center">
+
+            <div class="row align-items-start">
+
+                <div class="col">
+                    <form action="../php/registro.php" method="POST">
+                        User: <input type="text" name="usuario"><br><br>
+                        Password: <input type="password" name="senha"><br><br>
+                        <input class="btn btn-primary btn-lg "type="submit" name="submit" onclick="Enviar()" value="Enviar">
+                    </form>
+                </div>
+
+                <div class="col">
+                    <form action="../php/registro.php" method="POST">
+                        User: <input type="text" name="usuario"><br><br>
+                        Password: <input type="password" name="senha"><br><br>
+                        <input class="btn btn-primary btn-lg "type="submit" name="submit" onclick="Enviar()" value="Enviar">
+                    </form>
+                </div>
+                
+            </div>
+        </div>
 
     </main>
 
