@@ -48,11 +48,7 @@ if(isset($_POST['usuario']) || isset($_POST['senha'])){
 </head>
 <body class="p-1 mt-5 text-center">
 
-    <div>
-        <h2>CADASTRO ENVIADO COM SUCESSO</h2>
-
-        <p>Aguarde aprovação, você receberá um e-mail de confirmação em instantes.</p>
-
+    <div class="mt-5">
         <a href="../html/index.html" class="text-blue text-decoration-none fw-bolder">VOLTAR</a>
     </div>
 

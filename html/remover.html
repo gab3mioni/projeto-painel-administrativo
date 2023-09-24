@@ -17,19 +17,21 @@
 
         <section class="row">
 
-            <div class="col-md-6">
-                
-                <h2>Adicionar Funcionário</h2>
-
-                <a href="adicionar.html">REGISTRAR</a>
-
-            </div>
-
-            <div class="col-md-6">
+            <div class="col-md">
 
                 <h2>Remover Funcionário</h2>
 
-                <a href="remover.html">REMOVER</a>
+                <form action="../php/dashboardrm.php" method="POST" class="p-3">
+
+                    User: <input type="text" name="usuario"><br><br>
+                    Email: <input type="email" name="email"><br><br>
+                    Password: <input type="password" name="senha"><br><br>
+                    <input class="btn btn-primary btn-lg "type="submit" name="submitt" value="Remover">
+                </form>
+
+                <div class="mt-5">
+                    <a href="dashboard.html">VOLTAR</a>
+                </div>
 
             </div>
         </section>
