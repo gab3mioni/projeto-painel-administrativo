@@ -7,9 +7,10 @@ if(isset($_POST['submit']))
 
     $usuario = $_POST['usuario'];
     $senha = $_POST['senha'];
+    $email = $_POST['email'];
 
 
-    $result = mysqli_query($conexao, "INSERT INTO usuarios(usuario,senha) VALUES ('$usuario','$senha')");
+    $result = mysqli_query($conexao, "INSERT INTO usuarios(usuario,senha,email) VALUES ('$usuario','$senha','$email')");
 }
 
 ?>
@@ -28,7 +29,7 @@ if(isset($_POST['submit']))
     <div>
         <h2>CADASTRO ENVIADO COM SUCESSO</h2>
 
-        <p>Aguarde aprovação, você receberá um e-mail de confirmação de algum dos administradores</p>
+        <p>Aguarde aprovação, você receberá um e-mail de confirmação em instantes.</p>
 
         <a href="../html/index.html" class="text-blue text-decoration-none fw-bolder">VOLTAR</a>
     </div>
